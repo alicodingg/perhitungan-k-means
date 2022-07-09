@@ -1,0 +1,157 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 03, 2022 at 04:42 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `tugaskmeans`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `data_knn`
+--
+
+CREATE TABLE `data_knn` (
+  `id` int(5) NOT NULL,
+  `nama_satpam` varchar(50) NOT NULL,
+  `hr` varchar(50) NOT NULL,
+  `pr` varchar(100) NOT NULL,
+  `qrs` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `data_knn`
+--
+
+INSERT INTO `data_knn` (`id`, `nama_satpam`, `hr`, `pr`, `qrs`) VALUES
+(348, 'RENDRA KARNANDI', '65', '30', '162'),
+(349, 'MUHAMMAD ROZAN OKTAYUDI', '55', '34', '165'),
+(350, 'M HAFIIZH DWI SYAHPUTRA B. MANALU', '55', '45', '172'),
+(351, 'M. FURQAN', '61', '30', '167'),
+(352, 'MUHAMMAD AFRIZAL', '61', '31', '162'),
+(353, 'FARHAN RIZKI', '65', '30', '170'),
+(354, 'MAULANA ZIKRI', '60', '27', '177'),
+(355, 'MUAMMAR SIDQI', '58', '38', '170'),
+(356, 'MUHAMMAD HABIL QIRAM', '68', '39', '157'),
+(357, 'FATHUR AL KHALIDY', '61', '43', '167'),
+(358, 'ANFAL MADANI', '54', '31', '172'),
+(359, 'MUHAMMAD RAFI AKMAL', '58', '36', '175'),
+(360, 'FACHRUL RAZI', '68', '37', '160'),
+(361, 'TEUKU MUHAMMAD RIFKI ANANTA', '56', '49', '162'),
+(362, 'IKHSAN MAULANA', '49', '50', '162'),
+(363, 'MUHAMMAD SAFRIZAL', '69', '33', '162'),
+(364, 'MARHABAN', '69', '34', '175'),
+(365, 'AFRINALDI', '72', '51', '167'),
+(366, 'MUHAMMAD FUZARI', '61', '22', '154'),
+(367, 'FARHAN ALFARISY', '54', '49', '180'),
+(368, 'REFENDIKA RISKI WAHYU', '60', '32', '167'),
+(369, 'JEFRIZAL', '50', '34', '160'),
+(370, 'KIKI WINANTO', '66', '38', '162'),
+(371, 'RAFLY BAIHAQY ACHMAD', '52', '39', '167'),
+(372, 'RIVKI AGUNG BAIHAQQI', '64', '40', '175'),
+(373, 'MUHAMMAD JESKIN NAMUSKA', '52', '29', '160'),
+(374, 'ADITYA SYAHRAL HARAHAP', '68', '42', '165'),
+(375, 'DAWAM', '56', '37', '154'),
+(376, 'RANGGA WAHYU DEALOVA', '70', '34', '162'),
+(377, 'RAHMA NST', '77', '34', '165'),
+(378, 'MUHAMMAD ARIFIN HASIBUAN', '56', '33', '177'),
+(379, 'FERI KRISWANTO LAIYA', '72', '33', '165'),
+(380, 'MHD. ALFHIANSYAH', '83', '32', '157'),
+(381, 'MUHAMMAD HAMBALI', '59', '35', '162'),
+(382, 'M RAJA PASHA HAIKAL', '77', '37', '170'),
+(383, 'RAJA REYVANKA', '54', '51', '167'),
+(384, 'ARYA HANDOKO', '61', '32', '165'),
+(385, 'MUHAMMAD AGIL BAIHAQI HSB', '63', '33', '167'),
+(386, 'RIANSYAH TOKO BERUTU', '61', '28', '165'),
+(387, 'RINAL RAMADHAN TANJUNG', '52', '32', '165'),
+(388, 'THAFA ALFARAKH', '53', '34', '180'),
+(389, 'SETIA SAKTI', '54', '29', '170'),
+(390, 'MUHAMMAD RIZKY SETIAWAN', '58', '32', '160'),
+(391, 'MUHAMMAD RIZKI', '65', '34', '162'),
+(392, 'MUHAMMAD RIZAM', '81', '34', '165'),
+(393, 'MUHAMMAD ASSIDDIQI OCTAVIANDA', '54', '37', '160'),
+(394, 'MUHAMMAD TSUHENDRA', '56', '35', '170'),
+(395, 'M. AL MISWARI', '52', '34', '175'),
+(396, 'SYAHRUL RAMADHAN', '56', '47', '160'),
+(397, 'M. AZMAL', '81', '53', '160'),
+(398, 'MUHAMMAD AZIL', '54', '23', '180'),
+(399, 'AHMAD ZAMAN HURI', '61', '29', '162'),
+(400, 'FAYMAN', '61', '26', '162'),
+(401, 'MUHAMMAD FAUZAN', '65', '25', '167'),
+(402, 'RIZKI RAMADHANA', '50', '36', '175'),
+(403, 'MUHAMMAD RISKI', '55', '29', '162'),
+(404, 'ALYURIADI', '70', '29', '170'),
+(405, 'DANDI', '52', '41', '172'),
+(406, 'MUHAMMAD RIZKI PERDANA', '58', '43', '162'),
+(407, 'FADILA RAMADHAN', '57', '40', '177'),
+(408, 'MUHAMMAD HAFIZ', '65', '28', '175'),
+(409, 'MUHAMMAD SEPTIAN RENALDI HASIBUAN', '54', '32', '175'),
+(410, 'HASBY AINUL HAKIM', '58', '34', '167'),
+(411, 'SYUDEIS AL SAUD NASUTION', '63', '40', '170'),
+(412, 'IMAM MUNANDAR', '77', '32', '172'),
+(413, 'YAHDI HOT MARULI TUA NAINGGOLAN', '65', '38', '172'),
+(414, 'MUHAMMAD SETIA AGUNG PRAKASA', '62', '28', '167'),
+(415, 'ANGEL SELOMITA DWI CAHYANI', '58', '34', '160'),
+(416, 'ADRIANUS BENAYA CHRISTIAN GULTOM', '52', '32', '162'),
+(417, 'MUHAMMAD AJI SETIAWAN', '58', '30', '172'),
+(418, 'KURNIAWAN', '61', '45', '165'),
+(419, 'MUHAMMAD PRAYOGI', '68', '43', '160'),
+(420, 'SYINDY ULYA MAULANA', '72', '46', '177'),
+(421, 'ILHAM ILMI WICAKSONO', '72', '45', '162'),
+(422, 'RYHAD ZULFADLI', '63', '36', '157'),
+(423, 'FARHAN AZIZ', '52', '29', '162'),
+(424, 'FADLAN AULIA HASIBUAN', '58', '31', '167'),
+(425, 'RAFLY TONGKU ANANDA NASUTION', '58', '40', '157'),
+(426, 'ERLANGGA PARDEDE', '79', '32', '160'),
+(427, 'IRFAN HAKIM', '70', '29', '160'),
+(428, 'JIHAT MANIK', '55', '26', '162'),
+(429, 'ANDRYAN MAULANA NASUTION', '63', '31', '167'),
+(430, 'ADE ARIANSYAH RITONGA', '58', '21', '157'),
+(432, 'WILDAN EFENDI BATUBARA', '72', '53', '170'),
+(433, 'RIO RIZKI SIMANUNGKALIT', '70', '26', '160'),
+(434, 'DIMAZ PERDANATA SITEPU', '52', '34', '170'),
+(435, 'ICHSAN MAULANA', '58', '54', '167'),
+(436, 'IRWAN PAKPAHAN', '53', '29', '165'),
+(437, 'M. FARID AKBAR', '53', '27', '162'),
+(438, 'ANANDA HABIBILLAH', '71', '40', '160');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `data_knn`
+--
+ALTER TABLE `data_knn`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `data_knn`
+--
+ALTER TABLE `data_knn`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=447;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
